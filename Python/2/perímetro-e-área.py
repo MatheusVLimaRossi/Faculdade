@@ -1,0 +1,5 @@
+print("Máquina de calcular perímetro e área de um retângulo")
+a = int(input("Digite o valor da base do retângulo: "))
+b = int(input("Digite o valor da altura do retângulo: "))
+print("O perímetro do retângulo é:" ,(a+b)*2)
+print("A área do retangulo é:" ,(a*b))

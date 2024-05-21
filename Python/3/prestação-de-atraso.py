@@ -1,0 +1,6 @@
+print("Máquina de calcular o valor de uma prestação em atraso")
+a = float(input("Digite o valor da prestação: "))
+b = int(input("Digite a porcentagem de multa pelo atraso: "))
+c = int(input("Digite a quantidade de dias de atraso: "))
+prestacao = a + (a*(b/100) * c)
+print("O valor da prestação em atraso é de: %.2f" % (prestacao))

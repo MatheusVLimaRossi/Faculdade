@@ -1,0 +1,7 @@
+print(" Máquina de calcular volume de uma pirâmide")
+h = int(input("Digite a altura do tronco: "))
+bmaior = int(input("Digite o valor da base maior: "))
+bmenor = int(input("Digite o valor da base menor: "))
+volume = h/3 * (bmaior**2 + bmenor**2 + (bmaior**2 * bmenor**2) ** 0.5)
+# print("O volume do tronco dessa pirâmide é:", volume)
+print("O volume do tronco dessa pirâmide é: %.2f" % (volume))
