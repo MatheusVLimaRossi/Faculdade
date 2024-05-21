@@ -1,0 +1,25 @@
+.qua {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.fichario {
+    display: flex;
+    margin-top: 160px;
+    text-align: center;
+}
+.fichario-item {
+    background-color: yellow;
+    border: black solid 1px;
+    border-radius: 15px 15px 0px 0px;
+    padding: 0.5rem 1rem;
+    width: 170px;
+    margin-right: 1px;
+}
+
+.dentro {
+    background-color: yellow;
+    border: black solid 1px;
+    width: 55rem;
+    height: 30rem;
+}

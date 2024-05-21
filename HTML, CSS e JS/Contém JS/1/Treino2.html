@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Página </title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script>
+        function calculo(){
+        var idQ1 = parseInt(document.getElementById('idQ1').value)
+        var idV1 = parseInt(document.getElementById('idV1').value)
+        var idQ2 = parseInt(document.getElementById('idQ2').value)
+        var idV2 = parseInt(document.getElementById('idV2').value)
+        var idQ3 = parseInt(document.getElementById('idQ3').value)
+        var idV3 = parseInt(document.getElementById('idV3').value)
+
+
+        calculo1 = idQ1 * idV1
+        calculo2 = idQ2 * idV2
+        calculo3 = idQ3 * idV3
+        total = calculo1 + calculo2 + calculo3
+        document.getElementById('idS1').value = calculo1
+        document.getElementById('idS2').value = calculo2
+        document.getElementById('idS3').value = calculo3
+        document.getElementById('idT').value = total
+        }
+    </script>
+</head>
+<body>
+    <div class="mae">
+        <p class="ti"> Titulo </p>
+        <label> Quantidade 1 </label>
+        <input type="text" size="5" id="idQ1">
+        <br> <br>
+
+        <label> Valor 1 </label>
+        <input type="text" size="5" id="idV1">
+        <br> <br>
+
+        <label> Sub 1 </label>
+        <input type="text" size="5" id="idS1">
+        <br> <br>
+
+        <label> Quantidade 2 </label>
+        <input type="text" size="5" id="idQ2">
+        <br> <br>
+
+        <label> Valor 2 </label>
+        <input type="text" size="5" id="idV2">
+        <br> <br>
+
+        <label> Sub 2 </label>
+        <input type="text" size="5" id="idS2">
+        <br> <br>
+
+        <label> Quantidade 3 </label>
+        <input type="text" size="5" id="idQ3">
+        <br> <br>
+
+        <label> Valor 3 </label>
+        <input type="text" size="5" id="idV3">
+        <br> <br>
+
+        <label> Sub 3 </label>
+        <input type="text" size="5" id="idS3">
+        <br> <br>
+
+        <label> Total geral</label>
+        <input type="text" size="5" id="idT">
+        <br> <br>
+
+        <input type="button" value="CALCULAR" onclick="calculo()">
+
+    </div>
+
+</body>
+</html>

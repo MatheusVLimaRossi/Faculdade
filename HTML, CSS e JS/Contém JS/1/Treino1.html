@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Página </title>
+    <link rel="stylesheet" href="css/style1.css">
+    <script>
+        function calculo(){
+        var idA = parseInt(document.getElementById('idA').value)
+        var idB = parseInt(document.getElementById('idB').value)
+        var idD = parseInt(document.getElementById('idD').value)
+        calculo1 = idA * idB
+        calculo2 = idB * idD
+        document.getElementById('idA1').value = calculo1
+        document.getElementById('idA2').value = calculo2
+        }
+    </script>
+</head>
+    <div class="mae">
+        <div>
+            <p class="ti"> Área dos retangulos </p>
+        </div>
+        
+        <label> Número 1 </label>
+        <input type="text" size="5" id="idA">
+        <br> <br>
+
+        <label> Número 2 </label>
+        <input type="text" size="5" id="idB">
+        <br> <br>
+
+        <label> Número 3 </label>
+        <input type="text" size="5" id="idD">
+        <br> <br>
+
+        <label> A1 </label>
+        <input type="text" size="5" id="idA1">
+        <br> <br>
+            
+        <label> A2 </label>
+        <input type="text" size="5" id="idA2">
+        <br> <br>
+
+        <input type="button" value="CALCULAR" onclick="calculo()">
+    </div>
+</body>
+</html>

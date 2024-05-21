@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.mae{
+    width: 230px;
+    background-color: aquamarine;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.ti{
+    font-size: 25px;
+    margin-bottom: 15px;
+    background-color:darkgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

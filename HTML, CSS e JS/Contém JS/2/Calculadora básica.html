@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function somar(){
+            var num1 = parseInt(document.getElementById('idNum1').value)
+            var num2 = parseInt(document.getElementById('idNum2').value)
+            soma = num1 + num2
+            document.getElementById('idResult').value = soma
+        }
+
+        function subitração1(){
+            var num1 = parseInt(document.getElementById('idNum1').value)
+            var num2 = parseInt(document.getElementById('idNum2').value)
+            subitração = num1 - num2
+            document.getElementById('idResult').value = subitração
+        }
+
+        function multiplicação(){
+            var num1 = parseInt(document.getElementById('idNum1').value)
+            var num2 = parseInt(document.getElementById('idNum2').value)
+            mult = num1 * num2
+            document.getElementById('idResult').value = mult
+        }
+
+        function divisão(){
+            var num1 = parseInt(document.getElementById('idNum1').value)
+            var num2 = parseInt(document.getElementById('idNum2').value)
+            div = num1 / num2
+            document.getElementById('idResult').value = div
+        }
+    </script>
+</head>
+<body>
+    <label> Número 1 </label>
+    <input type="text" size="5" id="idNum1">
+    <br> <br>
+
+    <label> Número 2 </label>
+    <input type="text" size="5" id="idNum2">
+    <br> <br>
+
+    <label> Resultado </label>
+    <input type="text" size="5" id="idResult">
+    <br> <br>
+
+    <input type="button" value="Soma" onclick="somar()">
+    <input type="button" value="Subitração" onclick="subitração1()">
+    <input type="button" value="Multiplicação" onclick="multiplicação()">
+    <input type="button" value="Divisão" onclick="divisão()">
+</body>
+</html>

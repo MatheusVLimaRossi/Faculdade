@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1> Cadastro de Delivery </h1>
+    <div>
+        <form>
+            <label> Endereço </label> <input type="text" name="endereço" placeholder="Digite o endereço" size="40" maxlength="150"/> <br> <br>
+
+            <label> Data do Pedido </label> <input type="date" name="data_pedido"/> <br> <br>
+
+            <label> Senha de Autorização </label> <input type="password" name="senha"/> <br> <br>
+
+            <label> Data e Hora do Pedido </label> <input type="datetime-local" name="datahora_pedido"/> <br> <br>
+
+            <input type="radio" id="alternativa1" name="alternativa" value="A"/> <label for="alternativa1"> Casa </label>
+            <input type="radio" id="alternativa2" name="alternativa" value="B"/> <label for="alternativa2"> Prédio </label>
+            <input type="radio" id="alternativa3" name="alternativa" value="C"/> <label for="alternativa3"> Comercio </label>
+            <input type="radio" id="alternativa4" name="alternativa" value="D"/> <label for="alternativa4"> Nenhuma das Opções </label>
+            <br> <br>
+
+            <input type="checkbox" id="alternativa5" name="alternativab1" value="A"/> <label for="alternativa5"> Casa </label>
+            <input type="checkbox" id="alternativa6" name="alternativab2" value="B"/> <label for="alternativa6"> Prédio </label>
+            <input type="checkbox" id="alternativa7" name="alternativab3" value="C"/> <label for="alternativa7"> Comercio </label>
+            <input type="checkbox" id="alternativa8" name="alternativab4" value="D"/> <label for="alternativa8"> Nenhuma das Opções </label>
+            <br> <br>
+
+            <label> Tipo de Endereço </label>
+            <select name="tp_endereço" id="tp_endereço">
+                <option value="A"> Casa </option>
+                <option value="B"> Prédio </option>
+                <option value="C"> Comercio </option>
+                <option value="D"> Nenhuma das Opções </option>
+            </select>
+            <br> <br>
+
+            <label> Mensagem </label>
+            <textarea name="text" id="text" rows="10" cols="60"></textarea> <br> <br>
+
+            <input type="submit" name="enviar" value="Salvar"/> <br> <br>
+
+            <input type="button" name="Chamar" value="Chamar" onclick="alert('Primeira Mensagem!!!')"/>
+
+        </form>
+    </div>
+</body>
+</html>
